@@ -1,0 +1,129 @@
+.container{
+  width: min(600px , 80%);
+  height: 550px;
+  margin: auto;
+  margin-top: 75px;
+  border-radius: 12px;
+  background-image: linear-gradient(180deg , #130754 0% ,#3b2f80 100%);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  padding-top: 60px;
+  width: calc(100% - 2em);
+  margin: auto;
+}
+
+.top-bar input{
+  display: flex;
+  width: 100%;
+  height: 78px;
+  background: #ebfffc;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding-left: 40px;
+  color : #626262;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.search-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 78px;
+  background:#ebfffc;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.input-wrapper{
+  display: flex;
+    flex: 1 0;
+}
+
+.weather-image{
+  margin-top: 29px;
+  display: flex;
+  justify-content: center;
+  height: 132px;
+}
+.weather-temp{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size:clamp(3rem ,1.25rem ,17rem);
+  font-weight: 400;
+}
+.weather-location{
+  display: flex;
+  justify-content: center;
+  color: white;
+  /* font-size: 60px; */
+  font-size: clamp(2rem ,1.25rem ,17rem);
+  font-weight: 400;
+}
+
+.data-container{
+  margin-top: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.element{
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  gap :12px;
+}
+
+.data{
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.text{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.icon{
+  margin-top: 10px;
+}
+.loading{
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+}
+.error-msg{
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+}
+.loader-div{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+
+.custom-loader {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(farthest-side,#fff 94%,#0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%,#fff);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  animation:s3 1s infinite linear;
+}
+
+@keyframes s3{ 
+  100%{transform: rotate(1turn)}
+}
